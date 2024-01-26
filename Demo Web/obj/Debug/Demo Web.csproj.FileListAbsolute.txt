@@ -1,0 +1,83 @@
+C:\Github\Demo Web\Demo Web\bin\Demo Web.dll.config
+C:\Github\Demo Web\Demo Web\bin\Demo Web.dll
+C:\Github\Demo Web\Demo Web\bin\Demo Web.pdb
+C:\Github\Demo Web\Demo Web\bin\roslyn\csc.exe
+C:\Github\Demo Web\Demo Web\bin\roslyn\csc.exe.config
+C:\Github\Demo Web\Demo Web\bin\roslyn\csc.rsp
+C:\Github\Demo Web\Demo Web\bin\roslyn\csi.exe
+C:\Github\Demo Web\Demo Web\bin\roslyn\csi.exe.config
+C:\Github\Demo Web\Demo Web\bin\roslyn\csi.rsp
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Github\Demo Web\Demo Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.AppContext.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Console.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Globalization.Calendars.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.IO.Compression.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.IO.FileSystem.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Net.Http.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Net.Sockets.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.ValueTuple.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Xml.XPath.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Github\Demo Web\Demo Web\bin\roslyn\vbc.exe
+C:\Github\Demo Web\Demo Web\bin\roslyn\vbc.exe.config
+C:\Github\Demo Web\Demo Web\bin\roslyn\vbc.rsp
+C:\Github\Demo Web\Demo Web\bin\roslyn\VBCSCompiler.exe
+C:\Github\Demo Web\Demo Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Github\Demo Web\Demo Web\bin\Antlr3.Runtime.dll
+C:\Github\Demo Web\Demo Web\bin\EntityFramework.dll
+C:\Github\Demo Web\Demo Web\bin\EntityFramework.SqlServer.dll
+C:\Github\Demo Web\Demo Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Github\Demo Web\Demo Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Github\Demo Web\Demo Web\bin\Newtonsoft.Json.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.Helpers.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.Mvc.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.Optimization.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.Razor.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.Deployment.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.dll
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.Razor.dll
+C:\Github\Demo Web\Demo Web\bin\WebGrease.dll
+C:\Github\Demo Web\Demo Web\bin\EntityFramework.xml
+C:\Github\Demo Web\Demo Web\bin\EntityFramework.SqlServer.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.Helpers.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.Mvc.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.Optimization.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.Razor.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.Deployment.xml
+C:\Github\Demo Web\Demo Web\bin\System.Web.WebPages.Razor.xml
+C:\Github\Demo Web\Demo Web\bin\Newtonsoft.Json.xml
+C:\Github\Demo Web\Demo Web\bin\Antlr3.Runtime.pdb
+C:\Github\Demo Web\Demo Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Github\Demo Web\Demo Web\obj\Debug\Demo Web.csproj.AssemblyReference.cache
+C:\Github\Demo Web\Demo Web\obj\Debug\Demo Web.csproj.CoreCompileInputs.cache
+C:\Github\Demo Web\Demo Web\obj\Debug\Demo Web.csproj.CopyComplete
+C:\Github\Demo Web\Demo Web\obj\Debug\Demo Web.dll
+C:\Github\Demo Web\Demo Web\obj\Debug\Demo Web.pdb

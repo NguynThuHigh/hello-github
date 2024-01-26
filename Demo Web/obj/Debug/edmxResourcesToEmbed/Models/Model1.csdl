@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoWeb01Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminUser">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" MaxLength="24" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UserPass" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CTHoaDon">
+    <Key>
+      <PropertyRef Name="IdInvoice" />
+      <PropertyRef Name="IdPro" />
+    </Key>
+    <Property Name="IdInvoice" Type="Int32" Nullable="false" />
+    <Property Name="IdPro" Type="Int32" Nullable="false" />
+    <Property Name="ItemQuantity" Type="Int32" />
+    <NavigationProperty Name="HoaDon" Relationship="Self.UserName_CTHoaDon_HoaDon" FromRole="CTHoaDon" ToRole="HoaDon" />
+    <NavigationProperty Name="SanPham" Relationship="Self.UserName_CTHoaDon_SanPham" FromRole="CTHoaDon" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="IdInvoice" />
+    </Key>
+    <Property Name="IdInvoice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="24" FixedLength="true" Unicode="false" />
+    <Property Name="DateOrder" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="CTHoaDons" Relationship="Self.UserName_CTHoaDon_HoaDon" FromRole="HoaDon" ToRole="CTHoaDon" />
+    <NavigationProperty Name="User" Relationship="Self.UserName_HoaDon_UserName" FromRole="HoaDon" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="LoaiSanPham">
+    <Key>
+      <PropertyRef Name="IdCate" />
+    </Key>
+    <Property Name="IdCate" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameCate" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SanPhams" Relationship="Self.IdCate_SanPham_LoaiSanPham" FromRole="LoaiSanPham" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="IdPro" />
+    </Key>
+    <Property Name="IdPro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NamePro" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="8" />
+    <Property Name="Descriptions" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdCate" Type="Int32" />
+    <NavigationProperty Name="CTHoaDons" Relationship="Self.UserName_CTHoaDon_SanPham" FromRole="SanPham" ToRole="CTHoaDon" />
+    <NavigationProperty Name="LoaiSanPham" Relationship="Self.IdCate_SanPham_LoaiSanPham" FromRole="SanPham" ToRole="LoaiSanPham" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="String" MaxLength="24" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UserPass" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Phone" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="Int16" />
+    <NavigationProperty Name="HoaDons" Relationship="Self.UserName_HoaDon_UserName" FromRole="Users" ToRole="HoaDon" />
+  </EntityType>
+  <Association Name="UserName_CTHoaDon_HoaDon">
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
+    <End Role="CTHoaDon" Type="Self.CTHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="IdInvoice" />
+      </Principal>
+      <Dependent Role="CTHoaDon">
+        <PropertyRef Name="IdInvoice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserName_CTHoaDon_SanPham">
+    <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
+    <End Role="CTHoaDon" Type="Self.CTHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="IdPro" />
+      </Principal>
+      <Dependent Role="CTHoaDon">
+        <PropertyRef Name="IdPro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserName_HoaDon_UserName">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdCate_SanPham_LoaiSanPham">
+    <End Role="LoaiSanPham" Type="Self.LoaiSanPham" Multiplicity="0..1" />
+    <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiSanPham">
+        <PropertyRef Name="IdCate" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="IdCate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DemoWeb01Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminUsers" EntityType="Self.AdminUser" />
+    <EntitySet Name="CTHoaDons" EntityType="Self.CTHoaDon" />
+    <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
+    <EntitySet Name="LoaiSanPhams" EntityType="Self.LoaiSanPham" />
+    <EntitySet Name="SanPhams" EntityType="Self.SanPham" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="UserName_CTHoaDon_HoaDon" Association="Self.UserName_CTHoaDon_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="CTHoaDon" EntitySet="CTHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="UserName_CTHoaDon_SanPham" Association="Self.UserName_CTHoaDon_SanPham">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="CTHoaDon" EntitySet="CTHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="UserName_HoaDon_UserName" Association="Self.UserName_HoaDon_UserName">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="IdCate_SanPham_LoaiSanPham" Association="Self.IdCate_SanPham_LoaiSanPham">
+      <End Role="LoaiSanPham" EntitySet="LoaiSanPhams" />
+      <End Role="SanPham" EntitySet="SanPhams" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
