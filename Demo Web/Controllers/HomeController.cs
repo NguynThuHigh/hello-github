@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo_Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,11 +9,18 @@ namespace Demo_Web.Controllers
 {
     public class HomeController : Controller
     {
+        private DemoWeb01Entities db = new DemoWeb01Entities();
         public ActionResult Index()
         {
             return View();
         }
+        public ActionResult ListProduct()
+        {
 
+            var sanPhams = db.SanPhams.ToList();
+            return View(sanPhams);
+
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
