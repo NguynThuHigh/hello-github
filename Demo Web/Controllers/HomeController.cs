@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Demo_Web.Controllers
 {
+    //ok luôn 
     public class HomeController : Controller
     {
         private DemoWeb01Entities db = new DemoWeb01Entities();
