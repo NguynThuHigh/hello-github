@@ -16,7 +16,7 @@ namespace Demo_Web.Controllers
         }
         public ActionResult ListProduct()
         {
-
+            //...bug
             var sanPhams = db.SanPhams.ToList();
             return View(sanPhams);
 
